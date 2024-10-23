@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100..900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: snow;
+    line-height: 1.6;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #cd0046;
+}
+
+.navbar img {
+    height: 40px;
+}
+
+.nav-links {
+    margin-left: auto;
+}
+
+.navbar a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.navbar a:hover {
+    color: white;
+}
+
+.banner-slider {
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.banner-slider img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.about {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px 20px;
+}
+
+.about-text {
+    max-width: 50%;
+}
+
+.about-text h2 {
+    color: #333;
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+.about-text p {
+    color: #555;
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+.about-image {
+    max-width: 40%;
+    background-color: #cd0046;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.about-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.services {
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: snow;
+    border-radius: 8px;
+    box-shadow: 0 2px 20px #333;
+}
+
+.services h2, .services h3 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.services ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.services ul li {
+    margin: 10px 0;
+    font-size: 18px;
+    color: #333;
+}
+
+.button-wrapper {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #cd0046;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #ff4da6;
+}
+footer {
+    background-color: #cd0046;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    position: relative;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+}

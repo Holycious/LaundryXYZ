@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: snow;
+    line-height: 1.6;
+    min-height: 100vh;
+    background: url(images/LAUNDRY\ \(1\).jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #cd0046;
+    border-radius: 10px;
+    border-color: 10px #333;
+    width: 100%; 
+}
+
+.navbar img {
+    height: 40px;
+}
+
+.nav-links {
+    margin-left: auto;
+}
+
+.navbar a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.navbar a:hover {
+    color: white;
+}
+
+.wrapper {
+    width: 90%; 
+    max-width: 500px; 
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 40px #333;
+    color: #fff;
+    border-radius: 20px;
+    padding: 30px 40px;
+    font-weight: 600;
+    margin: 20px 0; 
+}
+
+form input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+h1 {
+    text-align: center;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+.checkbox-container {
+    width: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    color: white;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+input, select, button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 1em;
+}
+
+button {
+    height: 45px;
+    background: #d71a76;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 600;
+}
+
+button:hover {
+    background: #333;
+    color: #fff;
+}
+
+.result p {
+    font-size: 1.2em;
+    color: #333;
+}
+
+.result p strong {
+    color: red;
+}
+
+table {
+    width: 100%;
+    margin-bottom: 20px;
+    border-collapse: collapse;
+}
+
+table th, table td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+footer {
+    background-color: #cd0046;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    position: relative;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+}

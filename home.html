@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home - Laundry XYZ</title>
+
+    <link rel="stylesheet" href="home.css" />
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script>
+      $(document).ready(function () {
+        $(".banner-slider img:gt(0)").hide();
+        setInterval(function () {
+          $(".banner-slider img:first")
+            .fadeOut(1000)
+            .next()
+            .fadeIn(1000)
+            .end()
+            .appendTo(".banner-slider");
+        }, 3000);
+      });
+    </script>
+  </head>
+  <body>
+    <div class="navbar">
+      <a href="home.html"
+        ><img src="images/LAUNDRY.png" alt="Logo Laundry XYZ"
+      /></a>
+      <div class="nav-links">
+        <a href="home.html">Home</a>
+        <a href="price_validation.php">Cek Harga</a>
+        <a href="logout.php">Logout</a>
+      </div>
+    </div>
+
+    <div class="banner-slider">
+      <img src="images/banner1.jpg" alt="Promo 1" />
+      <img src="images/banner2.jpg" alt="Promo 2" />
+      <img src="images/banner3.jpg" alt="Promo 3" />
+    </div>
+
+    <section class="about">
+      <div class="about-text">
+        <h2>Tentang Laundry XYZ</h2>
+        <p>
+          Laundry XYZ adalah perusahaan yang berdiri baru hari ini. Kami fokus
+          pada inovasi layanan laundry untuk membantu UMKM, dengan menyediakan
+          solusi cepat dan mudah melalui berbagai outlet serta platform digital.
+        </p>
+      </div>
+
+      <div class="about-image">
+        <img src="images/LAUNDRY.png" alt="Laundry XYZ Logo" />
+      </div>
+    </section>
+
+    <section class="services">
+      <h2>Layanan Kami</h2>
+      <ul>
+        <li><strong>Cuci Kering:</strong> Rp 5.000 / kg</li>
+        <li><strong>Cuci Setrika:</strong> Rp 8.000 / kg</li>
+        <li><strong>Setrika:</strong> Rp 6.000 / kg</li>
+      </ul>
+
+      <h2>Pilihan Kecepatan</h2>
+      <ul>
+        <li><strong>Reguler:</strong> Tanpa biaya tambahan</li>
+        <li><strong>Ekspres:</strong> Tambahan Rp 2.000 / kg</li>
+      </ul>
+    </section>
+
+    <div class="button-wrapper">
+      <a href="price_validation.php" class="btn">Cek Harga Sekarang</a>
+      <br />
+      <br />
+    </div>
+
+    <footer>
+      <p>&copy; 2024 Laundry XYZ. All Rights Reserved.</p>
+    </footer>
+  </body>
+</html>
